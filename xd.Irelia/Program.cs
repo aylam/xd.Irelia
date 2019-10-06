@@ -22,7 +22,7 @@ namespace xd.Irelia
             try
             {
                 var a = Assembly.Load(Resources.Irelia);
-                var myType = a.GetType("Irelia.Irelia");
+                var myType = a.GetType("xd.Irelia");
                 var methon = myType.GetMethod("Main", BindingFlags.Public | BindingFlags.Static);
 
                 if (methon != null)
